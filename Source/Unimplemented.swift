@@ -1,6 +1,8 @@
 import Foundation
 import RxSwift
 
+public typealias Observable = RxSwift.Observable // fix Xcode15 workaround
+
 func unimplementedFunction(file: String = #file, function: String = #function, line: Int = #line) {
     fatalError("Unimplemented function \(function) in \(file):\(line)")
 }
